@@ -1,0 +1,34 @@
+body {
+    background-color:#e4ca96 ;
+    color: #2b97ad;
+}
+.name-and-photo{
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.name-and-photo img{
+    display: block;
+    margin: 0 auto;
+    border-radius: 100%;
+    max-width: 100%;
+}
+.structure-list, ul, li {
+    float: left
+}
+svg {
+    width: 25px;
+    height: 25px;
+    fill: currentColor;
+}
+li {
+    list-style-type: none;
+    margin: 8px
+}
+.RRSS li {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    margin: 8px;
+    float: left ;
+}
