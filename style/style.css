@@ -1,21 +1,63 @@
+@font-face {
+    font-family: 'Lobster';
+    src: url('./Fonts/Lobster/Lobster-Regular.ttf') format('truetype')
+}
+@font-face {
+    font-family: "ABC";
+    src: url("./Fonts/ABeeZee/ABeeZee-Regular.ttf");
+}
 body {
-    background-color:#e4ca96 ;
-    color: #2b97ad;
+    background-color:#17234D;
+    color: #4B94BF;
+    font-family: "ABC";
+    font-size: 14px;
+}
+a {
+    text-decoration: none;
+    color: currentColor;
+    text-shadow: 1px 1px 5px;
+}
+a:hover {
+    color:#D5BA98
 }
 .name-and-photo{
    text-align: center;
    display: flex;
    flex-direction: column;
    align-items: center;
+   font-family: "Lobster" , sans-serif;
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 20);
+   color: #D5BA98; 
 }
 .name-and-photo img{
     display: block;
     margin: 0 auto;
-    border-radius: 100%;
-    max-width: 100%;
+    border-radius: 50%;
+    max-width: 40%;
+    height: 50%;
+    box-shadow: 5px 5px 50px rgba(0, 0, 9, 20);
 }
-.structure-list, ul, li {
-    float: left
+.caja-menu .structure-list ul li {
+    float: left;
+    text-align: center;
+    padding: 10px;
+    top: 0;
+    left: 50%;
+}
+.caja-menu {
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+.menu {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+main .items-menu div h3 {
+    color: #D5BA98;
+    font-size: 1.5rem;
 }
 svg {
     width: 25px;
@@ -27,8 +69,11 @@ li {
     margin: 8px
 }
 .RRSS li {
+    display: flex;
     padding-top: 10%;
     padding-bottom: 10%;
     margin: 8px;
     float: left ;
+    justify-content: center;
+    align-items: center;
 }
