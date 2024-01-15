@@ -7,16 +7,16 @@
     src: url("./Fonts/ABeeZee/ABeeZee-Regular.ttf");
 }
 body {
-    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 5)), url("../ciudad-bonita-junto-al-mar.jpg");
-    background-size: 100%;
     color: black;
     font-family: "ABC";
     font-size: 14px;
 }
 header {
     height: 55px;
+    top: 0;
     width: 100%;
-    background-color: #fdf6e2
+    background-color: #fdf6e2;
+    position: fixed;
 }
 a {
     text-decoration: none;
@@ -34,6 +34,17 @@ a:hover {
    top:-6px;
    font-family: "Lobster" , sans-serif;
    color: black; 
+}
+.name h1{
+    width: 120px;
+}
+.name h1::before{
+    content: "Vinnie";
+}
+.name h1:hover::before{
+    content: "Pablo Vasta";
+    animation-duration: 1s;
+    animation-name: slidein;
 }
 .name-and-menu {
     display:flex;
@@ -64,20 +75,57 @@ a:hover {
     position: relative;
     top:-6px;
 }
+main {
+    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 5)), url("../ciudad-bonita-junto-al-mar.jpg");
+    background-size: 100%;
+}
 .big-name{
     font-family: "Lobster";
     font-size: 178px;
     color: #fdf6e2;
     padding: 178px;
 }
+.container-text::after {
+    content: "";
+    background-image: url(../IMG_3187.jpeg);
+    display: inline;
+    background-size: 130%;
+    background-position-x: -35px;
+    background-position-y:-15px ;
+    position: absolute;
+    top: 383px;
+    border-radius: 50%;
+    transform: scale(1);
+    left: 1093px;
+    height: 250px;
+    width: 250px;
+    opacity: 0;
+}
+/*Hay que trasladar el nombre para que aparezca la imagen de perfil, me he quedado ahi*/
 .big-name div{
     display: flex;
     justify-content: center;
 }
-.text:hover{
-    content: "Pablo Vincenzo Vasta Triviño";
-    cursor: pointer;
+@keyframes slidein {
+    from{
+        left: 0%;
+        opacity: 0;
+    }
+    to{
+        right:100%;
+        opacity: 1;
+    }
 }
+.text:before{
+    content: "Vinnie";
+}
+
+.text:hover::before{
+    content: "Pablo Vasta";
+    animation-duration: 1s;
+    animation-name: slidein;
+}
+
 svg {
     width: 25px;
     height: 25px;
@@ -93,14 +141,31 @@ li {
     color: #fdf6e2;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.info div {
+    box-sizing: content-box;
+    box-shadow: 0 0 5px black;
+    height: 400px;
+    max-width: 700px;
+    padding: 50px;
+    border-radius: 10px;
+    transition: 0.2s;
+    margin: 30px;
+    font-size: 15px;
+}
+.acerca-de-mi {
+    height: 300px;
+}
+.info div:hover {
+    background-color: #fdf6e2;
+    box-shadow: 0 0 5pc #ceb05c;
+    color: black;
+    margin:20px;
+    font-size: 17px ;
+    
 }
 
-.RRSS li {
-    display: flex;
-    padding-top: 10%;
-    padding-bottom: 10%;
-    margin: 8px;
-    float: left ;
-    justify-content: center;
-    align-items: center;
+.experiencia {
+    overflow:auto ;
 }
