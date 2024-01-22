@@ -6,148 +6,181 @@
     font-family: "ABC";
     src: url("./Fonts/ABeeZee/ABeeZee-Regular.ttf");
 }
+@font-face{
+    font-family: "Coder";
+    src: url(../style/Source_Code_Pro/SourceCodePro-VariableFont_wght.ttf)
+}
 body {
     color: black;
+    background-color: #e9e9e7;
     font-family: "ABC";
     font-size: 14px;
-    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("../ciudad-bonita-junto-al-mar.jpg");
-    background-size: 100%;
-    background-attachment: fixed;
+    svg {
+        width: 25px;
+        height: 25px;
+        fill: currentColor;
+    }
+    li {
+        list-style-type: none;
+        margin: 8px;
+        font-style: italic;
+    }
 }
 header {
     height: 55px;
     top: 0;
-    width: 100%;
-    left: 0;
-    background-color: #F2CAA7;
+    width: 80%;
+    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 10px;
+    border-radius: 9px;
+    box-shadow: 2px 2px 15px gray;
+    background-color: white;
     position: fixed;
     z-index: 1;
+    a {
+        text-decoration: none;
+        color: currentColor;
+        text-shadow: 1px 1px 5px;
+    }
+    a:hover {
+        color:#D5BA98
+    }
+    .name {
+       position: relative;
+       display: flex;
+       flex-direction: column;
+       align-items: left;
+       top:-6px;
+       font-family: "Lobster" , sans-serif;
+       color: black; 
+    }
+    .name h1{
+        width: 120px;
+    }
+    .name h1::before{
+        content: "Vinnie";
+    }
+    .name-and-menu {
+        display:flex;
+        justify-content: space-between;
+        max-width: 1425px;
+        margin: 0 auto;
+    }
+    .background-menu .caja-menu {
+        background-color: white;
+    }
+    .caja-menu .structure-list{
+        max-width: 1425px;
+        position: relative;
+        top:-6px;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    .caja-menu .structure-list ul{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        gap: 15px;
+        width: 100%;
+        left: 50%;
+    }
+    .redes-sociales ul {
+        display: flex;
+        position: relative;
+        top:-6px;
+    }
 }
-a {
-    text-decoration: none;
-    color: currentColor;
-    text-shadow: 1px 1px 5px;
-}
-a:hover {
-    color:#D5BA98
-}
-.name {
-   position: relative;
-   display: flex;
-   flex-direction: column;
-   align-items: left;
-   top:-6px;
-   font-family: "Lobster" , sans-serif;
-   color: black; 
-}
-.name h1{
-    width: 120px;
-}
-.name h1::before{
-    content: "Vinnie";
-}
-.name h1:hover::before{
-    content: "Pablo Vasta";
-    animation-duration: 1s;
-    animation-name: slidein;
-}
-.name-and-menu {
-    display:flex;
-    justify-content: space-between;
-    max-width: 1425px;
-    margin: 0 auto;
-}
-.background-menu .caja-menu {
-    background-color: #F7E7CE;
-}
-.caja-menu .structure-list{
-    max-width: 1425px;
-    position: relative;
-    top:-6px;
-    justify-content: space-between;
-    margin: 0 auto;
-}
-.caja-menu .structure-list ul{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    gap: 15px;
-    width: 100%;
-    left: 50%;
-}
-.redes-sociales ul {
-    display: flex;
-    position: relative;
-    top:-6px;
-}
+
 main {
-    ;
+    .img{
+        .hi-coders{
+            display: block;
+            justify-items: center;
+            color: #0E1626;
+            .first-letter {
+                position: absolute;
+                font-family: "Coder";
+                font-size: 10em;
+                top: -5%;
+                left: 40px;
+            }
+            .second-letter{
+                position:absolute;
+                top: 0%;
+                font-weight: bold;
+                font-family: "Coder";
+                font-size: 15em;
+                &::after{
+                    content: "</s>";
+                }
+            }
+            .third-phrase{
+                position: absolute;
+                top: 20%;
+                font-family: "Coder";
+                font-size: 15em;
+                &::after{
+                    content: "Vinnie";
+                    position:relative;
+                    display: block;
+                    font-family: "Lobster";
+                    top: -9px;
+                }
+        }
+        }
+        img {
+            position: fixed;
+            z-index: 0;
+            top: 0;
+            width: 50%;
+            left: 50%;
+        }
+    }
+    .big-name{
+        font-family: "Lobster";
+        font-size: 178px;
+        color: #0E1626;
+        margin: 178px;
+    }
+    .container-text::after {
+        content: "";
+        background-image: url(../IMG_3187.jpeg);
+        display: block;
+        background-size: 130%;
+        background-position-x: -35px;
+        background-position-y:-15px ;
+        position: relative;
+        top: 120px;
+        border-radius: 50%;
+        transform: scale(1);
+        left: 21%;
+        height: 250px;
+        width: 250px;
+        opacity: 0;
+        transition: 1s;
+    }
+    .container-text:hover::after {
+        content: "";
+        position: relative;
+        background-image: url(../IMG_3187.jpeg);
+        display: inline;
+        transform: scale(1.20);
+        height: 250px;
+        width: 250px;
+        opacity: 1;
+        z-index: 0;
+    }
+    .big-name div{
+        display: flex;
+        justify-content: center;
+    }
+}
 
-}
-.big-name{
-    font-family: "Lobster";
-    font-size: 178px;
-    color: #0E1626;
-    padding: 178px;
-}
-.container-text::after {
-    content: "";
-    background-image: url(../IMG_3187.jpeg);
-    display: inline;
-    background-size: 130%;
-    background-position-x: -35px;
-    background-position-y:-15px ;
-    position: static;
-    top: 190px;
-    border-radius: 50%;
-    transform: scale(1);
-    left: 1093px;
-    height: 250px;
-    width: 250px;
-    opacity: 0;
-}
-.container-text:hover::after {
-    content: "";
-    background-image: url(../IMG_3187.jpeg);
-    display: inline;
-    background-size: 130%;
-    background-position-x: -35px;
-    background-position-y:-15px ;
-    border-radius: 50%;
-    transform: scale(1.25);
-    left: 1093px;
-    height: 250px;
-    width: 250px;
-    transition: 1s;
-    opacity: 1;
-    z-index: 0;
-}
-
-.big-name div{
-    display: flex;
-    justify-content: center;
-}
-.container-text:before{
-    content: "Vinnie";
-}
-.container-text:hover::before{
-    content: "Pablo Vasta";
-    position: relative;
-    transform: translateX(-20%);
-    transition: 0.5s;
-}
-
-svg {
-    width: 25px;
-    height: 25px;
-    fill: currentColor;
-}
-li {
-    list-style-type: none;
-    margin: 8px;
-    font-style: italic;
-}
 .info {
+    position: relative;
+    top: 202px;
     box-sizing: 150%;
     display: grid;
     color: black;
@@ -156,6 +189,7 @@ li {
     gap: 20px;
 }
 .info div {
+    z-index: 1;
     box-sizing: content-box;
     box-shadow: 0 0 5px black;
     height: 400px;
