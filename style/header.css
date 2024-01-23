@@ -2,11 +2,10 @@ header{
     height: 55px;
     top: 0;
     width: 80%;
-    margin: 0 auto;
     left: 50%;
     transform: translateX(-50%);
     margin: 10px;
-    border-radius: 9px;
+    border-radius: 40px;
     box-shadow: 2px 2px 25px gray;
     background-color: var(--main-color);
     position: fixed;
@@ -16,43 +15,38 @@ header{
         text-decoration: none;
         color: currentColor;
         font-weight: bold;
-        &:hover {
-            color:#D5BA98;
-        }
     }
     .name-and-menu {
         display:flex;
         justify-content: space-around;
+        text-align: center;
         max-width: 1425px;
         margin: 0 auto;
         .name {
            position: relative;
-           display: flex;
-           flex-direction: column;
-           align-items: left;
-           top:-6px;
-           color: black; 
+           color: var(--secondary-color); 
            h1{
-           width: 120px;
-           &::before{
-               content: "Vinnie";
-               font-family: "Lobster";
-               font-style: normal;
-               color: var(--secondary-color);
+               &::before{
+                top: -25%;
+                transform: translateY(-25%) ;
+                display: block;
+                content: "Vinnie";
+                font-family: "Lobster";
+                font-style: normal;
+                color: var(--secondary-color);
+                }
             }
         }
-    }
         .caja-menu {
             .structure-list {
                 font-size: 1em;
                 position: relative;
-                top:-6px;
+                justify-items: center0;
+                top:10px;
                 justify-content: space-between;
                 margin: 0 auto;
                 ul{
                     display: flex;
-                    text-align: center;
-                    justify-content: center;
                     gap: 15px;
                     width: 100%;
                     left: 50%;
@@ -62,6 +56,7 @@ header{
     .redes-sociales ul {
         display: flex;
         position: relative;
-        top:-6px;
+        top:6px;
     }
+}
 }

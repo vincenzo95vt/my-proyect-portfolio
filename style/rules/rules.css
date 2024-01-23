@@ -11,22 +11,38 @@
     src: url("../Fonts/Lexend_Deca/LexendDeca-VariableFont_wght.ttf")
 }
 
-@media (max-width:400px){
-    body {
-        font-size: 0.5em;
-    }
+@media (max-width: 400px) {
     header {
-        height: 15px;
+        display: none;
+        top: 10px;
     }
-    .img-and-phrase{
-        bottom: 0px;
-        .hi-coders{
-            top: 14%;
+    main {
+        .img-and-phrase {
+          position: fixed;
+          bottom: 0;
+          background-size: cover;
+          
+          .hi-coders {
+            position: relative;
+            top: 20%;
+            font-size: 14em;
+          }
         }
-
+        h3{
+            text-align: center;
+        }
+        div{
+            font-size: 0.9em;
+        }
     }
 }
 :root {
+    --bg-color: #e9e9e7;
     --main-color:#e9e9e7;
     --secondary-color: #0E1626;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
 }
