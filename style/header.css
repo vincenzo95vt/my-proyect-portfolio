@@ -1,0 +1,67 @@
+header{
+    height: 55px;
+    top: 0;
+    width: 80%;
+    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 10px;
+    border-radius: 9px;
+    box-shadow: 2px 2px 25px gray;
+    background-color: var(--main-color);
+    position: fixed;
+    color: var(--secondary-color);
+    z-index: 1;
+    a {
+        text-decoration: none;
+        color: currentColor;
+        font-weight: bold;
+        &:hover {
+            color:#D5BA98;
+        }
+    }
+    .name-and-menu {
+        display:flex;
+        justify-content: space-around;
+        max-width: 1425px;
+        margin: 0 auto;
+        .name {
+           position: relative;
+           display: flex;
+           flex-direction: column;
+           align-items: left;
+           top:-6px;
+           color: black; 
+           h1{
+           width: 120px;
+           &::before{
+               content: "Vinnie";
+               font-family: "Lobster";
+               font-style: normal;
+               color: var(--secondary-color);
+            }
+        }
+    }
+        .caja-menu {
+            .structure-list {
+                font-size: 1em;
+                position: relative;
+                top:-6px;
+                justify-content: space-between;
+                margin: 0 auto;
+                ul{
+                    display: flex;
+                    text-align: center;
+                    justify-content: center;
+                    gap: 15px;
+                    width: 100%;
+                    left: 50%;
+                }
+            }
+        }
+    .redes-sociales ul {
+        display: flex;
+        position: relative;
+        top:-6px;
+    }
+}

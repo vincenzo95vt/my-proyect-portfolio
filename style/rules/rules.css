@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Lobster';
+    src: url("../Fonts/Lobster/Lobster-Regular.ttf") format('truetype')
+}
+@font-face {
+    font-family: "Coder";
+    src: url("../Source_Code_Pro/SourceCodePro-VariableFont_wght.ttf")
+}
+@font-face{
+    font-family: "Lexend";
+    src: url("../Fonts/Lexend_Deca/LexendDeca-VariableFont_wght.ttf")
+}
+
+@media (max-width:400px){
+    body {
+        font-size: 0.5em;
+    }
+    header {
+        height: 15px;
+    }
+    .img-and-phrase{
+        bottom: 0px;
+        .hi-coders{
+            top: 14%;
+        }
+
+    }
+}
+:root {
+    --main-color:#e9e9e7;
+    --secondary-color: #0E1626;
+}
