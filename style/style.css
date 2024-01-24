@@ -76,19 +76,36 @@ main {
         bottom: -950px;
         left: 50%;
         transform: translateX(-50%);
+        h3{
+            display: flex;
+            font-size: 2.5em;
+            justify-content: center;
+            margin-bottom: 30px;
+            font-weight: bold;
+            &::after{
+                content: "";
+                position: relative;
+                height: 1px;
+                width: 100px;
+                background-color: var(--secondary-color);
+                display: flex;
+                top:50px;
+                left: -10%;
+            }
+        }
         div {
             border-radius:15px;
             box-shadow:2px 2px 25px gray;
-            backdrop-filter: blur(12px);
+            border: 1px solid #7F1734;
+            background-color: var(--secondary-color);
+            color: var(--main-color);
+            font-size: 1.12em;
             padding-left: 20px;
             padding-bottom:20px;
             padding-right:20px;
             padding-top:5px;
             margin-bottom:40px;
             transition: 0.3s;
-            &:hover{
-                backdrop-filter: blur(60px)
-            }
             article {
                 font-size: 1.12em;
                 h3{
@@ -109,6 +126,30 @@ main {
                     }
                 }
             }
-        }   
+        }
+        .acerca-de-mi  {
+            width: 100%;
+            height: 500px;
+            .content-acerca-de-mi{
+                width: 50%;
+                position: relative;
+                right: -50%;
+                &::before{
+                    content: "";
+                    background-image: url("../IMG_5872.jpeg");
+                    background-size: cover;
+                    background-position: center;
+                    position: absolute;
+                    left: -100%;
+                    margin-left: 100px;
+                    border-radius: 10px;
+                    box-shadow: 2px 2px 15px black;
+                    top: 0;
+                    display: block;
+                    width: 60%;
+                    height: 90%;
+                }
+            }
+        } 
         
     }
