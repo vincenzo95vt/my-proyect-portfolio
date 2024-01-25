@@ -39,7 +39,7 @@ header{
         }
         .caja-menu {
             .structure-list {
-                font-size: 1em;
+                font-size: 0.8em;
                 position: relative;
                 justify-items: center0;
                 top:10px;
@@ -47,7 +47,7 @@ header{
                 margin: 0 auto;
                 ul{
                     display: flex;
-                    gap: 15px;
+                    gap: 7px;
                     width: 100%;
                     left: 50%;
                 }
