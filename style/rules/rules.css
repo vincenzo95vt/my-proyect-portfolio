@@ -10,6 +10,14 @@
     font-family: "Lexend";
     src: url("../Fonts/Lexend_Deca/LexendDeca-VariableFont_wght.ttf")
 }
+@font-face{
+    font-family: "Ubuntu";
+    src: url(../Fonts/Ubuntu/Ubuntu-Regular.ttf);
+}
+@font-face{
+    font-family: "Ubuntu Bold";
+    src: url(../Fonts/Ubuntu/Ubuntu-Bold.ttf);
+}
 
 @media (max-width: 400px) {
     header {

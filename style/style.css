@@ -5,7 +5,7 @@
 body {
     color: var(--secondary-color);
     background-color: var(--bg-color);
-    font-family: "Futura", sans-serif;
+    font-family: "Ubuntu", sans-serif;
     svg {
         width: 25px;
         height: 25px;
@@ -113,16 +113,18 @@ main {
             }
         }
         .acerca-de-mi  {
-            border-radius:15px;
-            box-shadow:2px 2px 25px gray;
+            border-radius:9px;
+            box-shadow:2px 2px 25px white;
             background-color: var(--secondary-color);
             color: var(--main-color);
             margin: 0 auto;
             margin-bottom: 100px;
+            padding-right: 90px;
             width: 95%;
             height: 100%;
             .content-acerca-de-mi{
                 width: 50%;
+                font-size: 1.2em;
                 position: relative;
                 right: -50%;
                 &::before{
@@ -148,41 +150,52 @@ main {
             position: relative;
             bottom: 50px;
             margin: 0 auto;
-            background: rgba(14, 22, 38, 0.65);
+            background: rgba(14, 22, 38, 0.45);
             color: var(--main-color);
             justify-content: center;
             border-radius: 15px;
             h3{
                 justify-content: center;
                 text-align: center;
+                align-items: center;
             }
         }
             .experiencia{
                 padding: 50px;
                 width: 90%;
                 backdrop-filter: blur(55px);
-                
                 box-shadow:2px 2px 25px gray;
-                background: rgba(14, 22, 38, 0.65);
+                background: rgba(14, 22, 38, 0.45);
+                padding: 10%;
                 color: var(--main-color);
                 width: 100%;
                 .container-experience{
                     display: flex;
-                    gap: 50px;
+                    gap: 70px;
+                    align-items: center;
+                    justify-content: space-between;
+                    &:last-child{
+                        margin-bottom: 10px;
+                    }
                     h4{
                         margin-top: 20px;
-                        margin-bottom: 0px;
+                        margin-bottom: 30px;
                         &:first-child{
-
-                            font-size: 1.25em;
+                            font-size: 2em;
                         }
                     }
                 }
                 p{
-                    font-size: 1em;
+                    font-size: 1.4em;
+                    margin-bottom: 150px;
+                    
+                }
+                .last-p{
+                    margin-bottom:-142px;
                 }
             }
-            
-        } 
+        }
+        .educacion{
+            background:  rgba(255, 255, 255, 0.30);
+        }
         
-    }
