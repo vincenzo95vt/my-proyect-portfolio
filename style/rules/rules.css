@@ -19,10 +19,24 @@
     src: url(../Fonts/Ubuntu/Ubuntu-Bold.ttf);
 }
 
+body {
+    color: var(--secondary-color);
+    background-color: var(--bg-color);
+    font-family: "Ubuntu", sans-serif;
+    svg {
+        width: 25px;
+        height: 25px;
+        fill: currentColor;
+    }
+    li {
+        list-style-type: none;
+        margin: 8px;
+    }
+}
+
 @media (max-width: 400px) {
     header {
         display: none;
-        top: 10px;
     }
     main {
         .img-and-phrase {
