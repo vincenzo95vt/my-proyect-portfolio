@@ -1,5 +1,6 @@
 main {
     .img-and-phrase{
+        /* Diseñamos la parte del background del main */
         color: var(--secondary-color);
         position: fixed;
         bottom:-15%;
@@ -48,6 +49,7 @@ main {
             left: 50%;
         }
     }
+    /* Aqui estructuramos ya la parte de mi informacion, acerca de mi, expereincia... */
     .info {
         padding-bottom: 5%;
         backdrop-filter: blur(17px);
