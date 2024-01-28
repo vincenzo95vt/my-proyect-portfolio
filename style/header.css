@@ -51,6 +51,28 @@ header{
                     gap: 7px;
                     width: 100%;
                     left: 50%;
+                    a{
+                        max-width: fit-content;
+                        &::after{
+                            content: "";
+                            display: flex;
+                            position: relative;
+                            bottom: -3px;
+                            left: 0px;
+                            max-width: 0%;
+                            height: 2px;
+                            transform-origin: left;
+                            background-color: var(--secondary-color);
+                            transition: 0.5s ease;
+                        }
+                        &:hover::after{
+                            display: flex;
+                            position: relative;
+                            max-width: 100%;
+                            display: flex;
+                        }
+                    }
+                    
                 }
             }
         }
