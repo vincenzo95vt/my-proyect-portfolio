@@ -1,0 +1,63 @@
+header{
+    /* Estructuramos el encabezado. */
+    height: 55px;
+    top: 0;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 10px;
+    border-radius: 40px;
+    box-shadow: 2px 2px 25px gray;
+    background-color: var(--main-color);
+    position: fixed;
+    color: var(--secondary-color);
+    z-index: 1;
+    a {
+        text-decoration: none;
+        color: currentColor;
+        font-weight: bold;
+    }
+    .name-and-menu {
+        display:flex;
+        justify-content: space-around;
+        text-align: center;
+        max-width: 1425px;
+        margin: 0 auto;
+        .name {
+           position: relative;
+           color: var(--secondary-color); 
+           h1{
+               &::before{
+                top: -25%;
+                transform: translateY(-25%) ;
+                display: block;
+                content: "Vinnie";
+                font-family: "Lobster";
+                font-style: normal;
+                color: var(--secondary-color);
+                }
+            }
+        }
+        .caja-menu {
+            .structure-list {
+                font-size: 0.8em;
+                position: relative;
+                justify-items: center0;
+                top:10px;
+                justify-content: space-between;
+                margin: 0 auto;
+                ul{
+                    display: flex;
+                    gap: 7px;
+                    width: 100%;
+                    left: 50%;
+                }
+            }
+        }
+    .redes-sociales ul {
+        display: flex;
+        position: relative;
+        top:6px;
+    }
+}
+}

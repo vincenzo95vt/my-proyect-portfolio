@@ -1,0 +1,47 @@
+footer{
+    position: relative;
+    /* He tenido que ponerle un bottom de -950px porque se me situaba por defecto en medio de la pantalla y no sabia como ponerlo abajo... */
+    bottom: -950px;
+    background-color: var(--secondary-color);
+    section{
+        svg{
+            fill: var(--main-color);
+        }
+        h3{
+            color: var(--main-color);
+            display: flex;
+            justify-content: center;
+            margin: 5%;
+            margin-bottom: 10%;
+            font-size: 2.5em;
+
+        }
+        ul{
+            margin-bottom: 25px;
+        }
+        h4{
+            color: white;
+            display: flex;
+            justify-content: center;
+            &::after{
+                content: "Vinnie";
+                font-family: "Lobster";
+                position: relative;
+                left: 10px;
+            }
+        }
+        padding-bottom: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 1%;
+        display: flex;
+        justify-content: center;
+        #RRSS{
+            ul{
+                gap: 50px;
+                display: flex;
+    
+            }
+        }
+    }
+}

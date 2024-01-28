@@ -1,0 +1,244 @@
+main {
+    .img-and-phrase{
+        /* Diseñamos la parte del background del main */
+        color: var(--secondary-color);
+        position: fixed;
+        bottom:-15%;
+        background-image: url(../Images/IMG_3194-fotor-2024012221651\ \(1\).png);
+        background-size: contain;
+        transform: translateY(10px);
+        background-repeat: no-repeat;
+        background-position: right;
+        top: 0;
+        width: 100%;
+        .hi-coders{
+            font-size: clamp(2.625rem, 0.0795rem + 10.1818vw, 9.625rem);
+            position: relative;
+            font-style: normal;
+            .hi{
+                font-style: normal;
+                font-family: "Coder";
+            }
+            .coder{
+                font-family: "Coder";
+                font-style: normal;
+                font-size: 1.12em;
+                font-weight: bold;
+                &::after{
+                    content: "</s>";
+                    background-color: var(--secondary-color);
+                    color: var(--main-color);
+                }
+            }
+            .this-is{
+                font-style: normal;
+                font-family: "Coder";
+                &::after{
+                    content: "Vinnie";
+                    font-family: "Lobster";
+                    display: block;
+                }
+            }
+        }
+    }
+        img {
+            position: fixed;
+            z-index: 0;
+            top: 0;
+            width: 50%;
+            left: 50%;
+        }
+    }
+    /* Aqui estructuramos ya la parte de mi informacion, acerca de mi, expereincia... */
+    .info {
+        padding-bottom: 5%;
+        backdrop-filter: blur(17px);
+        position: relative;
+        display: block;
+        z-index: 0;
+        height: auto;
+        bottom: -950px;
+        left: 50%;
+        transform: translateX(-50%);
+        h3{
+            display: flex;
+            font-size: 2.5em;
+            justify-content: center;
+            font-weight: bold;
+        }
+        div {
+            font-size: 1em;
+            padding-left: 20px;
+            padding-bottom:20px;
+            padding-right:20px;
+            padding-top:5px;
+            transition: 0.3s;
+            text-align: justify ;
+            article {
+                font-size: 1.12em;
+                
+                h3{
+                    display: flex;
+                    font-size: 2.5em;
+                    justify-content: center;
+                    font-weight: bold;
+                    &::after{
+                        content: "";
+                        position: relative;
+                        height: 1px;
+                        width: 100px;
+                        background-color: var(--bg-colorr);
+                        display: flex;
+                        top:50px;
+                        left: -10%;
+                    }
+                }
+            }
+        }
+        #acerca-de-mi  {
+            border-radius:9px;
+            box-shadow:2px 2px 25px white;
+            background-color: var(--secondary-color);
+            color: var(--main-color);
+            margin: 0 auto;
+            margin-bottom: 100px;
+            padding-right: 90px;
+            width: 95%;
+            height: 100%;
+            .content-acerca-de-mi{
+                width: 50%;
+                font-size: 1.2em;
+                position: relative;
+                right: -50%;
+                &::before{
+                    content: "";
+                    background-image: url("../Images/IMG_5872.jpeg");
+                    background-size: cover;
+                    background-position: center;
+                    position: absolute;
+                    left: -100%;
+                    margin-left: 100px;
+                    border-radius: 10px;
+                    box-shadow: 2px 2px 15px black;
+                    top: 0;
+                    display: block;
+                    width: 60%;
+                    height: 90%;
+                }
+            }
+        }
+        .container-name{
+            font-weight: bold;
+            width: 50%;
+            position: relative;
+            bottom: 50px;
+            margin: 0 auto;
+            background: rgba(14, 22, 38, 0.45);
+            color: var(--main-color);
+            justify-content: center;
+            border-radius: 15px;
+            h3{
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+
+            }
+        }
+        #experiencia{
+            box-shadow:2px 2px 25px gray;
+            background: rgba(14, 22, 38, 0.45);
+            padding: 10%;
+            color: var(--main-color);
+            width: 100%;
+            .container-experience{
+                display: flex;
+                gap: 70px;
+                align-items: center;
+                justify-content: space-between;
+                &:last-child{
+                    margin-bottom: 10px;
+                }
+                h4{
+                    margin-top: 20px;
+                    margin-bottom: 30px;
+                    &:first-child{
+                        font-size: 2em;
+                    }
+                }
+            }
+            p{
+                font-size: 1.4em;
+                margin-bottom: 150px;
+                
+            }
+            .last-p{
+                margin-bottom:-142px;
+            }
+        }
+        #educacion{
+            background:  rgba(255, 255, 255, 0.30);
+            padding: 10%;
+            margin-bottom: 5%;
+            h3{
+                padding: 60px;
+            }
+            .container-education{
+                line-height: 9;
+                .title-and-info-education{
+                    li{
+                        align-items: center;
+                        display: flex;
+                        justify-content: space-between;
+                        p{
+                            &:first-child{
+                                font-family: "Ubuntu Bold";
+                                font-size: 1.35em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #idiomas {
+            position: relative;
+            right: -50%;
+            box-shadow: 2px 2px 15px gray;
+            border-radius: 9px;
+            transform: translateX(-50%);
+            background-color: var(--main-color);
+            width: 40%;
+            height: 500px;
+            .contain{
+                position: relative;
+                line-height: 5;
+                top: 50%;
+                transform: translateY(-50%);
+                .contain-english,.contain-italiano{
+                    justify-content: center;
+                    gap: 50px;
+                    display: flex;
+                    
+                }
+            .contain-english::after{
+                content: "";
+                position: relative;
+                background-image: url(../Images/bandera\ inglesa.jpg);
+                width: 60px;
+                height: 30px;
+                background-size: cover;
+                bottom:-30px
+            }
+            .contain-italiano::after{
+                content: "";
+                position: relative;
+                background-image: url(../Images/bandera\ italia.png);
+                width: 60px;
+                height: 30px;
+                background-size: cover;
+                background-position: center;
+                bottom:-30px
+            }
+        }
+    }
+
+}
