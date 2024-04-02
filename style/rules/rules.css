@@ -23,6 +23,10 @@ body {
     color: var(--secondary-color);
     background-color: var(--bg-color);
     font-family: "Ubuntu", sans-serif;
+    max-width: 100%;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
     svg {
         width: 25px;
         height: 25px;
@@ -34,14 +38,12 @@ body {
     }
 }
 
-@media (max-width: 431px) {
+@media screen and (max-width: 431px) {
     header {
         display: none;
     }
     main{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        max-width: 100%;
     }
     main .info{
             display: table-row;
@@ -52,14 +54,14 @@ body {
             #acerca-de-mi{
                 left: 10%;
                 height: 600px;
-                overflow: auto;
-                padding-right: 20px;
+                padding-top: 0;
+                max-width: 100%;
+                padding-right: 5%;
+                padding-left: 5%;
+                padding-bottom: 5%;
+                padding-top: 0.5%;
+                margin-bottom: 22vw;
                 .content-acerca-de-mi{
-                    p{
-                        font-size: 1.15em;
-                        margin-bottom: 10px;
-                        
-                    }
                     .paragraph-info{
                         width: 200%;
                         position: relative;
@@ -67,11 +69,17 @@ body {
                     }
                 }
                 .content-acerca-de-mi::before{
-                    width:80%;
-                    height: 35%;
+                    width:90%;
+                    height: 60%;
                     margin-left: 0;
+                    left:-113%;
                     transform: translateX(15%);
                     
+                }
+            }
+            #experiencia{
+                li{
+                    max-width: 100%;
                 }
             }
         }
@@ -80,9 +88,4 @@ body {
 :root {
     --main-color:#e9e9e7;
     --secondary-color: #0E1626;
-}
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
 }

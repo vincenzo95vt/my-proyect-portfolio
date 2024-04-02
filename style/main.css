@@ -11,6 +11,7 @@ main {
         background-position: right;
         top: 0;
         width: 100%;
+        max-width: 100%;
         .hi-coders{
             font-size: clamp(2.625rem, 0.0795rem + 10.1818vw, 9.625rem);
             position: relative;
@@ -68,7 +69,6 @@ main {
         }
         div {
             font-size: 1em;
-            padding-left: 20px;
             padding-bottom:20px;
             padding-right:20px;
             padding-top:5px;
@@ -76,7 +76,6 @@ main {
             text-align: justify ;
             article {
                 font-size: 1.12em;
-                
                 h3{
                     display: flex;
                     font-size: 2.5em;
@@ -101,15 +100,20 @@ main {
             background-color: var(--secondary-color);
             color: var(--main-color);
             margin: 0 auto;
-            margin-bottom: 100px;
-            padding-right: 90px;
-            width: 95%;
+            margin-bottom: 10vw;
+            padding-right: 5%;
+            padding-left: 5%;
+            max-width: 95%;
             height: 100%;
+            h3{
+                margin-top: 2px;
+            }
             .content-acerca-de-mi{
                 width: 50%;
                 font-size: 1.2em;
                 position: relative;
                 right: -50%;
+                text-align: justify;
                 &::before{
                     content: "";
                     background-image: url("../Images/IMG_5872.jpeg");
@@ -149,7 +153,7 @@ main {
             background: rgba(14, 22, 38, 0.45);
             padding: 10%;
             color: var(--main-color);
-            width: 100%;
+            max-width: 100%;
             .container-experience{
                 display: flex;
                 gap: 70px;
