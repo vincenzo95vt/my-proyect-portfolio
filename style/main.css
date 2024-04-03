@@ -154,29 +154,39 @@ main {
             padding: 10%;
             color: var(--main-color);
             max-width: 100%;
-            .container-experience{
-                display: flex;
-                gap: 70px;
-                align-items: center;
-                justify-content: space-between;
-                &:last-child{
-                    margin-bottom: 10px;
-                }
-                h4{
-                    margin-top: 20px;
-                    margin-bottom: 30px;
-                    &:first-child{
-                        font-size: 2em;
+            article{
+                margin: 0 auto;
+                .container-experience{
+                    display: flex;
+                    gap: 70px;
+                    align-items: center;
+                    justify-content: space-between;
+                    &:last-child{
+                        margin-bottom: 10px;
+                    }
+                    .experience-info{
+                        width: 90px;
+                        h4{
+                            &:first-child{
+                                font-size: 2em;
+                            }
+                        }
+                        h5{
+                            font-size: 1.05em;
+                            justify-content: center;
+                            display: flow;
+                            
+                        }
                     }
                 }
-            }
-            p{
-                font-size: 1.4em;
-                margin-bottom: 150px;
-                
-            }
-            .last-p{
-                margin-bottom:-142px;
+                p{
+                    font-size: 1.7em;
+                    margin-bottom: 150px;
+                    
+                }
+                .last-p{
+                    margin-bottom:-142px;
+                }
             }
         }
         #educacion{

@@ -58,7 +58,7 @@ body {
                 max-width: 100%;
                 padding-right: 5%;
                 padding-left: 5%;
-                padding-bottom: 5%;
+                padding-bottom: 8%;
                 padding-top: 0.5%;
                 margin-bottom: 22vw;
                 .content-acerca-de-mi{
@@ -67,17 +67,23 @@ body {
                         position: relative;
                         right: 100%;
                     }
+                    p{
+                        font-size: 1.15em;
+                        margin: auto;
+                    }
+                    &::before{
+                        width:90%;
+                        height: 60%;
+                        margin-left: 0;
+                        left:-113%;
+                        transform: translateX(15%);
+                        
+                    }
                 }
-                .content-acerca-de-mi::before{
-                    width:90%;
-                    height: 60%;
-                    margin-left: 0;
-                    left:-113%;
-                    transform: translateX(15%);
-                    
-                }
+               
             }
             #experiencia{
+                
                 li{
                     max-width: 100%;
                 }
