@@ -58,7 +58,6 @@ main {
         display: block;
         z-index: 0;
         height: auto;
-        bottom: -950px;
         left: 50%;
         transform: translateX(-50%);
         h3{
@@ -197,7 +196,7 @@ main {
                 padding: 60px;
             }
             .container-education{
-                line-height: 9;
+                line-height: 7;
                 .title-and-info-education{
                     li{
                         align-items: center;
@@ -227,7 +226,7 @@ main {
                 line-height: 5;
                 top: 50%;
                 transform: translateY(-50%);
-                .contain-english,.contain-italiano{
+                .contain-english, .contain-italiano{
                     justify-content: center;
                     gap: 50px;
                     display: flex;

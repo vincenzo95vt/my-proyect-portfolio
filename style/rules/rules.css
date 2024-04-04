@@ -58,7 +58,7 @@ body {
                 max-width: 100%;
                 padding-right: 5%;
                 padding-left: 5%;
-                padding-bottom: 8%;
+                padding-bottom: 5%;
                 padding-top: 0.5%;
                 margin-bottom: 22vw;
                 .content-acerca-de-mi{
@@ -88,7 +88,47 @@ body {
                     max-width: 100%;
                 }
             }
+            #educacion{
+                h3{
+                    position: relative;
+                    top: -30px;
+                }
+                .container-education{
+                    line-height: 1.5;
+                    .title-and-info-education{
+                        margin-bottom: 40px;
+                        height: 5%;
+
+                        li{ 
+                            width: auto;
+                            align-items: center;
+                            display: block;
+                            justify-content: space-between;
+                            p{
+                                font-size: 1.5em;
+                                &:first-child{
+                                    font-family: "Ubuntu Bold";
+                                    font-size: 1.65em;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            #idiomas{
+                .contain{
+                    position: relative;
+                    line-height: 5;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    .contain-english, .contain-italiano{
+                        justify-content: center;
+                        gap: 50px;
+                        display: flex;
+                }
+            }
         }
+    }
 }
 
 :root {

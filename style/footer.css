@@ -1,7 +1,6 @@
 footer{
     position: relative;
     /* He tenido que ponerle un bottom de -950px porque se me situaba por defecto en medio de la pantalla y no sabia como ponerlo abajo... */
-    bottom: -950px;
     background-color: var(--secondary-color);
     section{
         svg{
