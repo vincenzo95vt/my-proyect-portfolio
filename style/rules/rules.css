@@ -23,7 +23,7 @@ body {
     color: var(--secondary-color);
     background-color: var(--bg-color);
     font-family: "Ubuntu", sans-serif;
-    max-width: 100%;
+    width: 100vw;
     margin:0;
     padding:0;
     box-sizing: border-box;
@@ -39,98 +39,159 @@ body {
 }
 
 @media screen and (max-width: 431px) {
-    header {
+    body{
+        font-size: 0.65em;
+    }
+    header{
         display: none;
     }
     main{
-        max-width: 100%;
-    }
-    main .info{
-            display: table-row;
-            align-content: center;
-            div{
-                padding-right: 70px;
-            }
-            #acerca-de-mi{
-                left: 10%;
-                height: 600px;
-                padding-top: 0;
-                max-width: 100%;
-                padding-right: 5%;
-                padding-left: 5%;
-                padding-bottom: 5%;
-                padding-top: 0.5%;
-                margin-bottom: 22vw;
-                .content-acerca-de-mi{
-                    .paragraph-info{
-                        width: 200%;
-                        position: relative;
-                        right: 100%;
-                    }
-                    p{
-                        font-size: 1.15em;
-                        margin: auto;
-                    }
-                    &::before{
-                        width:90%;
-                        height: 60%;
-                        margin-left: 0;
-                        left:-113%;
-                        transform: translateX(15%);
-                        
-                    }
-                }
-               
-            }
-            #experiencia{
+        .img-and-phrase{
+            height: 115vh;
+        }
+        #experiencia{
+            .container-experience{
+                max-width: 100vw;
                 
-                li{
-                    max-width: 100%;
-                }
+                gap: 5px;
+            }  
+            li{
+                display: flex;
+                justify-content: space-around;
+                max-width: 100vw;
             }
-            #educacion{
-                h3{
-                    position: relative;
-                    top: -30px;
-                }
-                .container-education{
-                    line-height: 1.5;
-                    .title-and-info-education{
-                        margin-bottom: 40px;
-                        height: 5%;
+        }
+        #educacion{
+            h3{
+                position: relative;
+                top: -30px;
+            }
+            .container-education{
+                line-height: 1.5;
+                .title-and-info-education{
+                    margin-bottom: 40px;
+                    height: 5%;
 
-                        li{ 
-                            width: auto;
-                            align-items: center;
-                            display: block;
-                            justify-content: space-between;
-                            p{
-                                font-size: 1.5em;
-                                &:first-child{
-                                    font-family: "Ubuntu Bold";
-                                    font-size: 1.65em;
-                                }
+                    li{ 
+                        width: 100vw;
+                        align-items: center;
+                        display: block;
+                        justify-content: space-between;
+                        p{
+                            &:first-child{
+                                font-family: "Ubuntu Bold";
+                                font-size: 1.65em;
                             }
                         }
                     }
                 }
             }
-            #idiomas{
-                .contain{
-                    position: relative;
-                    line-height: 5;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    .contain-english, .contain-italiano{
-                        justify-content: center;
-                        gap: 50px;
-                        display: flex;
+        }
+    }
+    /* body{
+        width: 100vw;
+        header {
+            display: none;
+        }
+        main{
+            width: 100%;
+        }
+        main .img-and-phrase{
+            
+    
+        }
+        main .info{
+                bottom: -200vh;
+                display: table-row;
+                align-content: center;
+                div{
+                    padding-right: 70px;
+                }
+                #acerca-de-mi{
+                    left: 10%;
+                    height: 600px;
+                    padding-top: 0;
+                    max-width: 100%;
+                    padding-right: 5%;
+                    padding-left: 5%;
+                    padding-bottom: 5%;
+                    padding-top: 0.5%;
+                    margin-bottom: 22vw;
+                    .content-acerca-de-mi{
+                        .paragraph-info{
+                            width: 100%;
+                            position: relative;
+                            right: 100%;
+                        }
+                        p{
+                            font-size: 1.15em;
+                            margin: auto;
+                        }
+                        &::before{
+                            width:90%;
+                            height: 60%;
+                            margin-left: 0;
+                            left:-113%;
+                            transform: translateX(15%);
+                            
+                        }
+                    }
+                   
+                }
+                #experiencia{
+                    
+                    li{
+                        max-width: 100%;
+                    }
+                }
+                #educacion{
+                    h3{
+                        position: relative;
+                        top: -30px;
+                    }
+                    .container-education{
+                        line-height: 1.5;
+                        .title-and-info-education{
+                            margin-bottom: 40px;
+                            height: 5%;
+    
+                            li{ 
+                                width: auto;
+                                align-items: center;
+                                display: block;
+                                justify-content: space-between;
+                                p{
+                                    font-size: 1.5em;
+                                    &:first-child{
+                                        font-family: "Ubuntu Bold";
+                                        font-size: 1.65em;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                #idiomas{
+                    .contain{
+                        position: relative;
+                        line-height: 5;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        .contain-english, .contain-italiano{
+                            justify-content: center;
+                            gap: 50px;
+                            display: flex;
+                    }
                 }
             }
         }
     }
-}
-
+    footer{
+        max-width: 100%;
+        bottom:-200vh;
+    }
+    /*  */
+    }
 :root {
     --main-color:#e9e9e7;
     --secondary-color: #0E1626;

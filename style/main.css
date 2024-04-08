@@ -10,8 +10,9 @@ main {
         background-repeat: no-repeat;
         background-position: right;
         top: 0;
-        width: 100%;
-        max-width: 100%;
+        width: 100vw;
+        max-width: 100vw;
+        
         .hi-coders{
             font-size: clamp(2.625rem, 0.0795rem + 10.1818vw, 9.625rem);
             position: relative;
@@ -52,6 +53,7 @@ main {
     }
     /* Aqui estructuramos ya la parte de mi informacion, acerca de mi, expereincia... */
     .info {
+        margin-top: 100vh;
         padding-bottom: 5%;
         backdrop-filter: blur(17px);
         position: relative;
@@ -157,7 +159,6 @@ main {
                 margin: 0 auto;
                 .container-experience{
                     display: flex;
-                    gap: 70px;
                     align-items: center;
                     justify-content: space-between;
                     &:last-child{

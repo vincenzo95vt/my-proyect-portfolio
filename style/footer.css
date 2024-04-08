@@ -1,5 +1,6 @@
 footer{
     position: relative;
+    max-width: 100vw;
     /* He tenido que ponerle un bottom de -950px porque se me situaba por defecto en medio de la pantalla y no sabia como ponerlo abajo... */
     background-color: var(--secondary-color);
     section{
