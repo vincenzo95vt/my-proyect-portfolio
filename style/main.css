@@ -105,7 +105,7 @@ main {
             padding-right: 5%;
             padding-left: 5%;
             max-width: 95%;
-            height: 100%;
+            height: auto;
             h3{
                 margin-top: 2px;
             }
@@ -121,13 +121,12 @@ main {
                     background-size: cover;
                     background-position: center;
                     position: absolute;
-                    left: -100%;
-                    margin-left: 100px;
+                    left: -40vw;
                     border-radius: 10px;
                     box-shadow: 2px 2px 15px black;
                     top: 0;
                     display: block;
-                    width: 60%;
+                    width: 30vw;
                     height: 90%;
                 }
             }
