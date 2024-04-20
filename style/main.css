@@ -70,8 +70,6 @@ main {
         }
         div {
             font-size: 1em;
-            padding-bottom:20px;
-            padding-right:20px;
             padding-top:5px;
             transition: 0.3s;
             text-align: justify ;
@@ -216,19 +214,20 @@ main {
             position: relative;
             right: -50%;
             box-shadow: 2px 2px 15px gray;
+            display: flex;
+            flex-direction: column;
             border-radius: 9px;
             transform: translateX(-50%);
             background-color: var(--main-color);
-            width: 40%;
-            height: 500px;
+            width: 40vw;
             .contain{
                 position: relative;
+                right: -50%;
+                transform: translateX(-50%);
+                width: 35%;
                 line-height: 5;
-                top: 50%;
-                transform: translateY(-50%);
                 .contain-english, .contain-italiano{
-                    justify-content: center;
-                    gap: 50px;
+                    justify-content: space-between;
                     display: flex;
                     
                 }
@@ -239,7 +238,7 @@ main {
                 width: 60px;
                 height: 30px;
                 background-size: cover;
-                bottom:-30px
+                bottom: -54px
             }
             .contain-italiano::after{
                 content: "";
@@ -249,7 +248,7 @@ main {
                 height: 30px;
                 background-size: cover;
                 background-position: center;
-                bottom:-30px
+                bottom:-54px
             }
         }
     }
