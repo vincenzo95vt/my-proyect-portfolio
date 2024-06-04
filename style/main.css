@@ -43,7 +43,7 @@ main {
             }
         }
     }
-        img {
+        .my-photo{
             position: fixed;
             z-index: 0;
             top: 0;
@@ -99,7 +99,7 @@ main {
             background-color: var(--secondary-color);
             color: var(--main-color);
             margin: 0 auto;
-            margin-bottom: 10vw;
+            margin-bottom: 5vh;
             padding-right: 5%;
             padding-left: 5%;
             max-width: 95%;
@@ -107,37 +107,36 @@ main {
             h3{
                 margin-top: 2px;
             }
-            .content-acerca-de-mi{
-                width: 50%;
-                font-size: 1.2em;
-                position: relative;
-                right: -50%;
-                text-align: justify;
-                &::before{
-                    content: "";
-                    background-image: url("../Images/IMG_5872.jpeg");
-                    background-size: cover;
-                    background-position: center;
-                    position: absolute;
-                    left: -40vw;
-                    border-radius: 10px;
-                    box-shadow: 2px 2px 15px black;
-                    top: 0;
-                    display: block;
-                    width: 30vw;
-                    height: 90%;
+            .info-and-photo{
+                display: flex ;
+                justify-content: space-around;
+                img{
+                    width: 20%;
+                    height: auto;
+                    margin: 0 auto;
+                    margin-bottom: 50px;
+                    border-radius: 15px;
+                    box-shadow: 2px 2px 5px black;
+                }
+                .content-acerca-de-mi{
+                    width: 50%;
+                    font-size: 1.2em;
+                    position: relative;
+                    text-align: justify;
                 }
             }
+            
         }
         .container-name{
             font-weight: bold;
             width: 50%;
-            position: relative;
             bottom: 50px;
+            display: flex;
             margin: 0 auto;
             background: rgba(14, 22, 38, 0.45);
             color: var(--main-color);
             justify-content: center;
+            margin-bottom: 5vh;
             border-radius: 15px;
             h3{
                 justify-content: center;
@@ -210,7 +209,49 @@ main {
                 }
             }
         }
-        #idiomas {
+        #idiomas{
+            font-size: 1em;
+            height: 10%;
+            position: relative;
+            right: -50%;
+            box-shadow: 2px 2px 15px gray;
+            display: flex;
+            align-content: center;
+            flex-direction: column;
+            border-radius: 9px;
+            transform: translateX(-50%);
+            background-color: var(--main-color);
+            width: 40vw;
+            .contain{
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                .contain-english{
+                    display: flex;
+                    justify-content: space-evenly;
+                    font-size: 1em;
+                    img{
+                        width: 5vw;
+                        height: auto;
+                        align-self: center;
+
+                    }
+                }
+                .contain-italiano{
+                    display: flex;
+                    justify-content: space-evenly;
+                    font-size: 1em;
+                    img{
+                        width: 5vw;
+                        height: auto;
+                        align-self: center;
+
+                    }
+                }
+            }
+        }
+        /* #idiomas {
             position: relative;
             right: -50%;
             box-shadow: 2px 2px 15px gray;
@@ -231,26 +272,30 @@ main {
                     display: flex;
                     
                 }
-            .contain-english::after{
-                content: "";
-                position: relative;
-                background-image: url(../Images/bandera\ inglesa.jpg);
-                width: 60px;
-                height: 30px;
-                background-size: cover;
-                bottom: -54px
+            .contain-english{
+                &::after{
+                    content: "";
+                    position: relative;
+                    background-image: url(../Images/bandera\ inglesa.jpg);
+                    width: 5%;
+                    height: 2%;
+                    background-size: cover;
+                    bottom: 2%;
+                }   
             }
-            .contain-italiano::after{
-                content: "";
-                position: relative;
-                background-image: url(../Images/bandera\ italia.png);
-                width: 60px;
-                height: 30px;
-                background-size: cover;
-                background-position: center;
-                bottom:-54px
+            .contain-italiano{
+                &::after{
+                    content: "";
+                    position: relative;
+                    background-image: url(../Images/bandera italia.png);
+                    width: 5%;
+                    height: 2vh;
+                    background-size: cover;
+                    background-position: center;
+                    bottom: -1vh;
+                }
             }
         }
-    }
+    } */
 
 }

@@ -18,7 +18,9 @@
     font-family: "Ubuntu Bold";
     src: url(../Fonts/Ubuntu/Ubuntu-Bold.ttf);
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body {
     color: var(--secondary-color);
     background-color: var(--bg-color);
@@ -27,6 +29,7 @@ body {
     margin:0;
     padding:0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
     svg {
         width: 25px;
         height: 25px;
@@ -41,10 +44,10 @@ body {
 @media screen and (max-width: 431px) {
     body{
         font-size: 0.65em;
+        header{
+            display: none;
+        }
         word-spacing: 0.15em;
-    }
-    header{
-        display: none;
     }
     main{
         .info div{
@@ -53,27 +56,39 @@ body {
             padding-top:0px;
         }
         .img-and-phrase{
-            height: 115vh;
+            height: 120vh;
+            .hi-coders{
+                width: 100%;
+                top: 0px;
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    li{
+                        margin-bottom: 10px;
+                        font-size: 1.7em;
+                    }
+                    
+                }
+            }
         }
         #acerca-de-mi{
             height: 400px;
             padding-top: 0;
             max-width: 100%;
             
-            margin-bottom: 22vw;
+            margin-bottom: 25vw;
             .content-acerca-de-mi{
                 width: auto;
                 .paragraph-info{
                     width: 100%;
                     position: relative;
                 }
-               
-                &::before{
-                    height: 20vh;
-                    
-                }
             }
            
+        }
+        .container-name{
+            margin-bottom: 10px;
         }
         #experiencia{
             .container-experience{
@@ -119,6 +134,44 @@ body {
         #idiomas{
             font-size: 0.5em;
             height: 10%;
+            position: relative;
+            right: -50%;
+            box-shadow: 2px 2px 15px gray;
+            display: flex;
+            align-content: center;
+            flex-direction: column;
+            border-radius: 9px;
+            transform: translateX(-50%);
+            background-color: var(--main-color);
+            width: 40vw;
+            .contain{
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                .contain-english{
+                    display: flex;
+                    justify-content: space-evenly;
+                    font-size: 10px;
+                    img{
+                        width: 20%;
+                        height: auto;
+                        align-self: center;
+
+                    }
+                }
+                .contain-italiano{
+                    display: flex;
+                    justify-content: space-evenly;
+                    font-size: 10px;
+                    img{
+                        width: 10%;
+                        height: auto;
+                        align-self: center;
+
+                    }
+                }
+            }
         }
     }
     /* body{
