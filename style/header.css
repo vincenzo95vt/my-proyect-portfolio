@@ -1,8 +1,6 @@
 header{
     /* Estructuramos el encabezado. */
     height: 55px;
-    display: flex;
-    justify-content: center;
     top: 2%;
     width: 80%;
     left: 50%;
@@ -24,7 +22,8 @@ header{
         justify-content: space-around;
         text-align: center;
         align-items: center;
-        max-width: 100%;
+        max-width: 1425px;
+        height: 55px;
         .name {
            position: relative;
            color: var(--secondary-color); 
