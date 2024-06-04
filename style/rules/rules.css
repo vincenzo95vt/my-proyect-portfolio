@@ -75,14 +75,25 @@ body {
         #acerca-de-mi{
             height: 400px;
             padding-top: 0;
+            padding-bottom: 2%;
             max-width: 100%;
-            
+            font-size: 1.35em;
             margin-bottom: 25vw;
             .content-acerca-de-mi{
                 width: auto;
                 .paragraph-info{
                     width: 100%;
                     position: relative;
+                }
+            }
+            .knowledges{
+                display: flex;
+                flex-direction: column;
+                .imgLanguages{
+                    img{
+                        max-width: 50px;
+                        max-height: 50px;
+                    }
                 }
             }
            

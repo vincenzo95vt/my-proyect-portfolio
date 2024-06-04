@@ -8,6 +8,7 @@ header{
     margin: 10px;
     border-radius: 40px;
     box-shadow: 2px 2px 25px gray;
+    padding: 2px;
     background-color: var(--main-color);
     position: fixed;
     color: var(--secondary-color);
