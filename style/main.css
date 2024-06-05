@@ -12,9 +12,8 @@ main {
         top: 0;
         width: 100vw;
         max-width: 100vw;
-        
         .hi-coders{
-            font-size: clamp(2.625rem, 0.0795rem + 10.1818vw, 9.625rem);
+            font-size: clamp(2.625rem, 0.0795rem + 8.1818vw, 9.625rem);
             position: relative;
             font-style: normal;
             .hi{
@@ -291,9 +290,27 @@ main {
                 font-weight: bolder;
                 font-size: 1.25em;
                 color: var(--secondary-color);
+                &::after{
+                    content: "";
+                    display: flex;
+                    position: relative;
+                    bottom: -3px;
+                    left: 0px;
+                    max-width: 0%;
+                    height: 2px;
+                    transform-origin: left;
+                    background-color: var(--secondary-color);
+                    transition: 0.5s ease;
+                }
+                &:hover::after{
+                    display: flex;
+                    position: relative;
+                    max-width: 100%;
+                    display: flex;
+                }
             }
             &:hover{
                 cursor: pointer;
-            }
+            }   
         }
 }
